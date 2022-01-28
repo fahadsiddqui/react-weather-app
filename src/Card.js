@@ -25,7 +25,7 @@ return(
             <img className='img' src={weather_image} />     
             <img className='icon' src={`https://openweathermap.org/img/wn/${props.icon}@2x.png`} />
             <h6 className='date'>{dt.getDate()}-{months[dt.getMonth()]}-{dt.getFullYear()} </h6>       
-            <h6 className='temp'>{props.day} <span>&#8451;</span></h6>
+            <h6 className='temp'>{props.day} <small>&#8451;</small></h6>
           </div>
           <div className='card-body'>
               <h6 className='mix'>Min : {props.min} Max : {props.max}</h6> 
